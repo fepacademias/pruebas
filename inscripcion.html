@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inscripción - FEP Academia</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --color-principal: #c40000;
+      --color-principal-oscuro: #900000;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0; line-height: 1.6;
+    }
+    header {
+      background: var(--color-principal);
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header img {
+      max-width: 250px;
+      height: auto;
+    }
+    nav {
+      background: var(--color-principal-oscuro);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: block;
+      font-weight: 600;
+    }
+    nav a:hover, nav a.active {
+      background: var(--color-principal);
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: var(--color-principal);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background-color: var(--color-principal-oscuro);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Logotipo FEP Academia" />
+  <p>¡Transforma tu futuro con nosotros!</p>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="acerca.html">Acerca de</a>
+  <a href="cursos.html">Cursos</a>
+  <a href="inscripcion.html" class="active">Inscripción</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
+
+<section>
+  <h2>Formulario de Inscripción</h2>
+  <form action="https://formsubmit.co/yerehg@gmail.com" method="POST">
+    <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+    <input type="email" name="email" placeholder="Correo electrónico" required>
+    <input type="tel" name="telefono" placeholder="Teléfono de contacto" required>
+    <textarea name="mensaje" placeholder="Comenta sobre el curso de interes" rows="4"></textarea>
+
+    <!-- Evita spam -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Redirección después de enviar -->
+    <input type="hidden" name="_next" value="https://fepacademias.github.io/prueba/gracias.html">
+
+    <!-- Asunto del correo -->
+    <input type="hidden" name="_subject" value="Nueva inscripción desde el sitio web">
+
+    <button type="submit">Enviar inscripción</button>
+  </form>
+</section>
+
