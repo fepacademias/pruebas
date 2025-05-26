@@ -2,19 +2,73 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Gracias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academia FEP - Gracias</title>
   <style>
+    :root {
+      --color-principal: #c40000;
+      --color-principal-oscuro: #900000;
+    }
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
       text-align: center;
-      padding: 50px;
+    }
+    header {
+      background: var(--color-principal);
+      color: #fff;
+      padding: 20px 0;
+    }
+    header img {
+      max-width: 250px;
+      height: auto;
+    }
+    nav {
+      background: var(--color-principal-oscuro);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: block;
+      font-weight: 600;
+    }
+    nav a:hover, nav a.active {
+      background: var(--color-principal);
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 800px;
+      margin: auto;
     }
   </style>
 </head>
 <body>
+
+<header>
+  <img src="logo.png" alt="Logotipo FEP Academia" />
+  <p>¡Transforma tu futuro con nosotros!</p>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="acerca.html">Acerca de</a>
+  <a href="cursos.html">Cursos</a>
+  <a href="inscripcion.html">Inscripción</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
+
+<section>
   <h2>¡Gracias por tu inscripción!</h2>
   <p>Nos pondremos en contacto contigo lo antes posible.</p>
-  <a href="index.html">Volver al inicio</a>
+</section>
+
 </body>
 </html>
 
