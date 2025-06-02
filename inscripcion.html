@@ -13,6 +13,7 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0; padding: 0; line-height: 1.6;
+      background-color: #f9f9f9;
     }
     header {
       background: var(--color-principal);
@@ -52,19 +53,21 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+    .campo {
+      margin-bottom: 20px;
+    }
     input, textarea {
       width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      margin-bottom: 20px;
+      padding: 12px;
       border-radius: 4px;
       border: 1px solid #ccc;
+      box-sizing: border-box;
     }
     footer {
-        background: #222;
-        color: white;
-        text-align: center;
-        padding: 1px 0;
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1px 0;
     }
     button {
       background-color: var(--color-principal);
@@ -98,10 +101,18 @@
 <section>
   <h2>Formulario de Inscripción</h2>
   <form action="https://formsubmit.co/infoorotava@academiasfep.com" method="POST">
-    <input type="text" name="nombre" placeholder="Tu nombre completo" required>
-    <input type="email" name="email" placeholder="Correo electrónico" required>
-    <input type="tel" name="telefono" placeholder="Teléfono de contacto" required>
-    <textarea name="mensaje" placeholder="Comenta sobre el curso de interes" rows="4"></textarea>
+    <div class="campo">
+      <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+    </div>
+    <div class="campo">
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+    </div>
+    <div class="campo">
+      <input type="tel" name="telefono" placeholder="Teléfono de contacto" required>
+    </div>
+    <div class="campo">
+      <textarea name="mensaje" placeholder="Comenta sobre el curso de interés" rows="4"></textarea>
+    </div>
 
     <!-- Evita spam -->
     <input type="hidden" name="_captcha" value="false">
@@ -117,6 +128,9 @@
 </section>
 
 <footer>
-    <p>© 2025 Academia FEP. Todos los derechos reservados.</p>
+  <p>© 2025 Academia FEP. Todos los derechos reservados.</p>
 </footer>
+
+</body>
+</html>
 
